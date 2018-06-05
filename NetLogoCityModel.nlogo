@@ -1112,9 +1112,6 @@ Press CREATE CARS to associate cars to location in the city. Do not use the GO b
 
 Press GO to run the simulation. (Only after you have run CLEAR, and let VIEW ROADS and CREATE CARS run to completion).
 
-## THINGS TO NOTICE
-
-(suggested things for the user to notice while running the model)
 
 ## THINGS TO TRY
 

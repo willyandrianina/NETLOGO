@@ -77,7 +77,7 @@ patches-own
 ;==================================================================================================
 to setup
   ;remise à zero
-  __clear-all-and-reset-
+  __clear-all-and-reset-ticks
 
   ; point de passage intermédiare
   ; A corriger ces points doivent etre repris par les shapefile pour etre plus précis et independant des "setting" @RC_TODO
@@ -119,9 +119,6 @@ to setup
                                                 (gis:envelope-of dataset_leisure)
                                                 (gis:envelope-of dataset_work)
                                                 (gis:envelope-of dataset_habitation))
-
-
-
   display-city-districts
   display-routes
 
@@ -132,8 +129,6 @@ to setup
   set LastvisitedTarget nobody
   ask turtles [ stop-inspecting self ]
 
-  ; initialisation du séquenceur agents
-  reset-ticks
 end  ;=============================================================================================
 
 ;==================================================================================================
@@ -1117,9 +1112,6 @@ Press CREATE CARS to associate cars to location in the city. Do not use the GO b
 
 Press GO to run the simulation. (Only after you have run CLEAR, and let VIEW ROADS and CREATE CARS run to completion).
 
-## THINGS TO NOTICE
-
-(suggested things for the user to notice while running the model)
 
 ## THINGS TO TRY
 
